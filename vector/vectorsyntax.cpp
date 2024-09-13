@@ -63,7 +63,7 @@ int main(){
 
     }
 
-    vec.pop_back();  // delete the last element
+    vec.pop_back();  // delete the last element from vector
 
     cout<<endl;
 
