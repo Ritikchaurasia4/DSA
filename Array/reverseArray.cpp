@@ -8,7 +8,7 @@ void reverseArray(int arr[] , int size){  // Function definition
     int start = 0;
     int end = size-1;
     while(start < end){
-        swap(arr[start] , arr[end]); // swap is predefined function in c++
+        swap(arr[start] , arr[end]); // swap is predefined function in c++ , we can also swap using a third variable
         start++;
         end--;
     }
