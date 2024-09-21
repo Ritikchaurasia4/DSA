@@ -19,7 +19,7 @@
 //     return 0;
 // }
 
-// Optimise approach.........................
+// Moore's voting algo.........................
 
 #include<iostream>
 #include<vector>
