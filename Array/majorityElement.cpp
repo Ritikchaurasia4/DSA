@@ -36,6 +36,6 @@ int main(){
         }
         else freq--;
     }
-   cout<<ans;
+    cout<<ans;
     return 0;
 }
