@@ -1,4 +1,4 @@
-// Selection sort : In selection sort we find minimum element in the array and we swap the minimum element with first element of th remaining unsorted array .
+// Selection sort : In selection sort we find minimum element in the array and then  we swap this minimum element with first element of th remaining unsorted array .
 
 #include<iostream>
 using namespace std;
