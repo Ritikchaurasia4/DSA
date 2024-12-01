@@ -28,6 +28,28 @@ void preOrder(struct Node* root){    // preOrder  :    root , left substring , r
 
 }
 
+void inOrder(struct Node* root){  // inOrder :  left Substring , root , right substring
+
+    if(root == NULL){
+        return;
+    }
+    
+    inOrder(root->left);    
+    cout<<root->data<<" ";
+    inOrder(root->right);
+}
+
+void postOrder(struct Node* root){   // postOrder :  left substring , right substring , root
+
+    if(root == NULL){
+        return;
+    }
+
+    postOrder(root->left);
+    postOrder(root -> right);
+    cout<<root->data<<" ";
+}
+
 int main(){
     struct Node* root = new Node(1);
 
@@ -47,8 +69,19 @@ int main(){
          4   5  6   7
 
     */
-
+    
+    cout<<"Preorder: ";
     preOrder(root);
+
+    cout<<endl;
+
+    cout<<"Inorder: ";
+    inOrder(root);
+
+    cout<<endl;
+
+    cout<<"Postorder: ";
+    postOrder(root);
 
     return 0;
 }
